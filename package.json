@@ -1,6 +1,6 @@
 {
-  "name": "ref",
-  "description": "Turn Buffer instances into \"pointers\"",
+  "name": "electron-ref",
+  "description": "This is a fork of the ref project, adding electron build support and binaries",
   "keywords": [
     "native",
     "buffer",
