@@ -1,6 +1,6 @@
 
 var assert = require('assert')
-var weak = require('weak')
+var weak = require('electron-weak')
 var ref = require('../')
 
 describe('pointer', function () {
