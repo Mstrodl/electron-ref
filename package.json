@@ -17,7 +17,7 @@
     "byte",
     "64"
   ],
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "Justin Chase <justin@evolvelabs.com>",
   "repository": {
     "type": "git",
@@ -48,5 +48,6 @@
     "mocha": "*",
     "electron-weak": "0.4.4",
     "electron-updater-tools": "~0.0.x"
-  }
+  },
+  "bundledDependencies": [ "electron-updater-tools" ]
 }
