@@ -163,3 +163,13 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 [docs]: http://tootallnate.github.com/ref
+
+
+Fork Notes
+----------
+This fork adds electron build support, compatible with [electron-updater](https://github.com/evolvelabs/electron-updater).
+
+Binaries available for various platforms on s3, e.g.:
+https://s3.amazonaws.com/evolve-bin/electron-ref/electron-ref-0.1.7-win32-x64-release-master.tgz
+
+See the `package.json` for how the url is composed.

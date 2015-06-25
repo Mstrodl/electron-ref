@@ -1,8 +1,14 @@
 npm-debug.log
+.amazon
+*.yml
+*.tgz
 
 /build
 /node_modules
 /docs/index.html
+/test
+/src
+/docs
 
 # ignore root-level single-letter file dev files
 ?.js
