@@ -1,6 +1,6 @@
 ref
 ===
-### Turn Buffer instances into "pointers"
+### Turn Buffer instances into "pointers" 
 [![Build Status](https://secure.travis-ci.org/EvolveLabs/electron-ref.svg)](https://travis-ci.org/EvolveLabs/electron-ref)
 [![Build status](https://ci.appveyor.com/api/projects/status/lqsc444oyfjpmngk?svg=true)](https://ci.appveyor.com/project/BlairEvolve/electron-ref)
 
