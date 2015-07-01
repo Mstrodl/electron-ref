@@ -47,7 +47,7 @@
     "jade": "0.35.0",
     "marked": "0.3.2",
     "mocha": "*",
-    "electron-weak": "0.4.4"
+    "electron-weak": "0.4.6"
   },
   "bundledDependencies": [ "electron-updater-tools" ]
 }
