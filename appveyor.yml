@@ -6,14 +6,15 @@ environment:
   nodejs_version: "2.5.0"
   publish_binary: false
   bin_dir: ./node_modules/electron-updater-tools/bin
-
-platform:
-  - ia32
-  - x64
-
-configuration:
-  - debug
-  - release
+  matrix:
+    - ARCH: ia32
+      CONF: release
+    - ARCH: ia32
+      CONF: debug
+    - ARCH: x64
+      CONF: release
+    - ARCH: x64
+      CONF: debug
 
 install:
   # Get the latest stable version of Node.js or io.js
@@ -31,10 +32,10 @@ test_script:
   - npm test
 
 build_script:
-  - bash %bin_dir%/elb configure %CONFIGURATION% %PLATFORM%
+  - bash %bin_dir%/elb configure %ARCH% %CONF%
 
 after_build:
-  - node %bin_dir%/elpack --arch %PLATFORM% --configuration %CONFIGURATION%
+  - node %bin_dir%/elpack --arch %ARCH% --configuration %CONF%
 
 deploy_script:
-  - if "%PUBLISH_BINARY%" == "true" ( node %bin_dir%/elpub -b evolve-bin -i %s3accessKeyId% -k %s3secretAccessKey% -a %PLATFORM% -C %CONFIGURATION% )
+  - if "%PUBLISH_BINARY%" == "true" ( node %bin_dir%/elpub -b evolve-bin -i %s3accessKeyId% -k %s3secretAccessKey% -a %ARCH% -C %CONF% )
