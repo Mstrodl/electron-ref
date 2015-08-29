@@ -17,8 +17,9 @@
     "byte",
     "64"
   ],
-  "version": "1.0.11",
-  "author": "Justin Chase <justin@evolvelabs.com>",
+  "version": "1.1.0",
+  "license": "MIT",
+  "author": "Nathan Rajlich <nathan@tootallnate.net> (http://tootallnate.net)",
   "repository": {
     "type": "git",
     "url": "git://github.com/EvolveLabs/electron-ref.git"
@@ -30,24 +31,26 @@
     "install": "bash ./node_modules/.bin/elinst"
   },
   "engines": {
-    "node": ">=2.2.1"
+    "node": ">=3.1.0",
+    "electron": "~0.31.0"
   },
   "binaries": [
     "https://s3.amazonaws.com/evolve-bin/{name}/{name}-{version}-{platform}-{arch}-{configuration}.tgz"
   ],
   "dependencies": {
-    "bindings": "~1.2.0",
+    "bindings": "1",
     "debug": "2",
-    "electron-updater-tools": "~0.1.x"
+    "electron-updater-tools": "~0.2.0",
+    "nan": "2"
   },
   "devDependencies": {
     "nan": "~1.8.4",
     "dox": "0.4.4",
     "highlight.js": "1",
-    "jade": "0.35.0",
-    "marked": "0.3.2",
+    "jade": "^0.35.0",
+    "marked": "^0.3.2",
     "mocha": "*",
-    "electron-weak": "~0.4.8"
+    "electron-weak": "~0.5.0"
   },
   "bundledDependencies": [ "electron-updater-tools" ]
 }
