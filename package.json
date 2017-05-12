@@ -27,8 +27,7 @@
   "main": "./lib/ref.js",
   "scripts": {
     "docs": "node docs/compile",
-    "test": "mocha -gc --reporter spec",
-    "install": "bash ./node_modules/.bin/elinst"
+    "test": "mocha -gc --reporter spec"
   },
   "engines": {
     "node": ">=3.1.0",
